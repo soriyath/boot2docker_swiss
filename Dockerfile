@@ -3,7 +3,7 @@ Maintainer Sumi Straessle
 
 # Add configuration files (swiss ntp servers, swiss timezone)
 ADD ntpd $ROOTFS/etc/rc.d/ntpd
-ADD Zurich /etc/localtime
+ADD Zurich $ROOTFS/etc/localtime
 
 RUN /make_iso.sh
 CMD ["cat", "boot2docker.iso"]
