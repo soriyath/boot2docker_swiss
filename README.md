@@ -13,7 +13,7 @@ docker build -t boot2docker_swiss .
 docker run --rm boot2docker_swiss > boot2docker_swiss.iso
 ```
 
-# Create a specific swiss vm
+## Create a specific swiss vm
 > I prefer to keep the original VM as a fallback, as well as the original boot2docker.iso file.
 
 ```
@@ -23,6 +23,6 @@ eval $(docker-machine env swissvm)
 docker-machine stop swissvm
 ```
 
-# Change de startup disc of `swissvm`
+## Change de startup disc of `swissvm`
 1. Open Virtual Box
 2. Manually change the startup disc in the configuration of `swissvm`
