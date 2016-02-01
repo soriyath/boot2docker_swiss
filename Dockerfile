@@ -5,5 +5,7 @@ Maintainer Sumi Straessle
 ADD ntpd $ROOTFS/etc/rc.d/ntpd
 ADD Zurich $ROOTFS/etc/localtime
 
+RUN chmod 755 $ROOTFS/etc/rc.d/ntpd
+
 RUN /make_iso.sh
 CMD ["cat", "boot2docker.iso"]
