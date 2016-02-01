@@ -23,6 +23,6 @@ eval $(docker-machine env swissvm)
 docker-machine stop swissvm
 ```
 
-## Change de startup disc of `swissvm`
+## Change the startup disc of `swissvm`
 1. Open Virtual Box
 2. Manually change the startup disc in the configuration of `swissvm`
