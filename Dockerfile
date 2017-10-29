@@ -9,5 +9,5 @@ RUN chmod 755 $ROOTFS/etc/rc.d/ntpd
 
 ENV DOCKER_STORAGE=overlay
 
-RUN /make_iso.sh
-CMD ["cat", "boot2docker.iso"]
+RUN $ROOTFS/tmp/make_iso.sh
+CMD ["sh", "-c", "[ -t 1 ] && exec bash || exec cat boot2docker.iso"]
